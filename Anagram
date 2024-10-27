@@ -1,0 +1,11 @@
+# Write code to Check if two strings are Anagram or not
+
+str1 = input("Enter str1: ")
+str2 = input("Enter str2: ")
+s1 = sorted(str1)
+s2 = sorted(str2)
+
+if s1==s2:
+    print("yes str is anagram ")
+else:
+    print("No its is not ")
