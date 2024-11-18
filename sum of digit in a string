@@ -1,0 +1,12 @@
+#sum of digit in a string
+string = input()
+temp = ""
+sum = 0
+for ch in string:
+  if ch.isdigit():
+    temp+=ch
+  else:
+    if temp:
+      sum+=int(temp)
+      temp = ""
+print(sum + int(temp))
