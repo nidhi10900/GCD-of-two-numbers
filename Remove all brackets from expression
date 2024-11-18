@@ -1,0 +1,21 @@
+#approach 1
+express = "a+((b-c)+d)"
+res = express.replace("(", "").replace(")", "").replace("{", "").replace("}", "").replace("[", "").replace("]", "")
+print(res)
+
+
+
+
+#approach 2
+express = "a+((b-c)+d)"
+res = ""
+for ch in express:
+  if ch not in "()[]{}":
+    res+=ch
+print(res)
+  
+
+
+
+
+
