@@ -1,0 +1,3 @@
+word = "@nidhi.co!m"
+rem = ''.join(ch for ch in word if ch.isalpha())
+print(rem)
