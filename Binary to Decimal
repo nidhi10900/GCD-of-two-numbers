@@ -1,0 +1,15 @@
+#manual method
+bin = "1011"
+decimal = 0
+n = len(bin)
+for i in range(n):
+  decimal += int(bin[n-1-i])*(2**i)
+print(decimal)
+
+
+
+#direct methode
+binary = "1001"
+deci = 0
+deci = int(binary,2)
+print(deci)
