@@ -1,0 +1,10 @@
+# reverse words in string
+word = input()
+splt = word.split()
+reverse = splt[::-1]
+res = " ".join(reverse)
+print(res)
+
+
+#reverse character in string
+
