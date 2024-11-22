@@ -1,0 +1,15 @@
+'''N is interger no of event and your task to return the number having odd frequency event 
+input N = 5
+            1 2 3 2 3
+python code'''
+
+
+N = int(input())
+number = list(map(int,input().split()))
+odd = None
+
+for i in number:
+  if number.count(i)%2!=0:
+    odd =i
+print(odd)
+  
