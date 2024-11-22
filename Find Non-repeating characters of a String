@@ -1,0 +1,8 @@
+#Find Non-repeating characters of a String
+
+string = input()
+copy =" "
+for ch in string:
+  if string.count(ch)==1:
+    copy+=ch
+print(copy)
