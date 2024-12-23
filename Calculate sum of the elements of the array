@@ -1,0 +1,28 @@
+#Calculate sum of the elements of the array
+#without function
+
+
+arr = list(map(int,input().split()))
+sum = 0
+for i in arr:
+  if len(arr)==1:
+    print(arr)
+  else:
+    sum+=i
+print(sum)
+
+#-----------------------------------------------------------------------------------------------
+#with function
+
+def arr_sum(arr):
+  sum = 0
+  for i in arr:
+    if len(arr)==1:
+      return arr
+    else:
+      sum+=i
+  return sum
+
+arr = list(map(int,input().split()))
+print(arr_sum(arr))
+  
