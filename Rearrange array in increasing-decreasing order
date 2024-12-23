@@ -1,0 +1,31 @@
+#Rearrange array in increasing-decreasing order
+#without function
+
+
+arr = list(map(int,input().split()))
+arr.sort()
+n = len(arr)
+first = arr[:n//2]
+second = arr[n//2:]
+second.reverse()
+res = first+second
+print(res)
+
+#with function
+
+def order(arr):
+  arr.sort()
+  n = len(arr)
+  first = arr[:n//2]
+  second = arr[n//2:]
+  second.reverse()
+  res = first + second
+  return res
+
+
+
+
+
+
+arr = list(map(int,input().split()))
+print(order(arr))
