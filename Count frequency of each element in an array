@@ -1,0 +1,62 @@
+#Count frequency of each element in an array
+#without function 
+
+arr = list(map(int,input().split()))
+dic = {}
+for i in arr:
+  if i in dic:
+    dic[i]+=1
+  else:
+    dic[i]=1
+    
+for key,value in dic.items():
+  print(f"{key}:{value}") #10:2
+                          2:1
+      OR  
+
+print(dic)  # output: {10: 2, 2: 1} 
+
+# with function
+
+
+def count_i(arr):
+  dic ={}
+  for i in arr:
+    if i in dic:
+      dic[i]+=1
+    else:
+      dic[i]=1
+  return dic
+  
+
+
+arr = list(map(int,input().split()))
+for key,value in count_i(arr).items():
+    print(f"{key}:{value}")
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
