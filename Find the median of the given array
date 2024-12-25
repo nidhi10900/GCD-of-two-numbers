@@ -1,0 +1,23 @@
+#Find the median of the given array
+arr = list(map(int,input().split()))
+n = len(arr)
+arr.sort()
+if n%2==1:
+  med = arr[n//2]
+else:
+  med = (arr[n//2-1]+arr[n//2])/2
+print(med)
+
+#with function
+def med_arr(arr):
+  n = len(arr)
+  arr.sort()
+  if n%2==1:
+    med = arr[n//2]
+  else:
+    med = (arr[n//2-1]+arr[n//2])/2
+  return med
+  
+
+arr = list(map(int,input().split()))
+print(med_arr(arr))
