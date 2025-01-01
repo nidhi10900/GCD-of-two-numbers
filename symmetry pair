@@ -1,0 +1,33 @@
+# program for symmetry pair 
+
+#1st way
+def sym(pairs):
+  s = set()
+  for (x,y) in pairs:
+    s.add((x,y))
+    if (y,x) in s:
+      print((x,y))
+  
+  
+#pairs = [(3, 4), (1, 2), (5, 2), (7, 10), (4, 3), (2, 5)] 
+pairs = eval(input())
+sym(pairs)
+
+
+
+# 2nd way
+def sym(pairs):
+  sym_pairs = []
+  seen = {}
+  for x,y in pairs:
+    if y in seen and seen[y]==x:
+      sym_pairs.append((x,y))
+    else:
+      seen[x]=y
+  return sym_pairs
+
+pairs = eval(input())
+print(sym(pairs))
+
+
+
