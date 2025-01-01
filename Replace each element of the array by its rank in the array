@@ -1,0 +1,12 @@
+#Replace each element of the array by its rank in the array
+arr = list(map(int,input().split()))
+sort_arr = sorted(arr)
+arr_dic = {}
+for i in range(len(sort_arr)):
+  if sort_arr[i] not in arr_dic:
+    arr_dic[sort_arr[i]] = i+1
+
+rank_arr = []
+for value in arr:
+  rank_arr.append(arr_dic[value])
+print(rank_arr)
