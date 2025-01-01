@@ -1,0 +1,26 @@
+#Sorting elements of an array by frequency
+#for ascending
+arr = list(map(int,input().split()))
+freq = {}
+for i in arr:
+  if i in freq:                
+    freq[i]+=1
+  else:
+    freq[i]=1
+  
+sort_arr = sorted(arr,key=lambda x:(freq[x],x)) 
+print(sort_arr)                                  #2 1 3 2 2 4 output: [1, 3, 4, 2, 2, 2]
+
+
+
+#for descending
+arr = list(map(int,input().split()))
+freq = {}
+for i in arr:
+  if i in freq:                
+    freq[i]+=1
+  else:
+    freq[i]=1
+  
+sort_arr = sorted(arr,key=lambda x:(-freq[x],x)) 
+print(sort_arr)                                 #2 1 3 2 2 4 output: [2, 2, 2, 1, 3, 4]
