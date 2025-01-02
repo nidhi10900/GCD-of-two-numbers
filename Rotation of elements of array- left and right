@@ -1,0 +1,20 @@
+#Rotation of elements of array- left and right
+#rotate right
+
+arr = eval(input())
+k = int(input())
+n = len(arr)
+k = k%n
+rotate = arr[-k:] + arr[:-k]
+print(rotate)
+
+
+
+#rotate left
+arr = eval(input())
+k = int(input())
+n = len(arr)
+k = k%n
+rotate = arr[k:] + arr[:k]
+print(rotate)
+
