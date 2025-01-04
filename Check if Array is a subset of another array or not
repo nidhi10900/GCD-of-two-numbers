@@ -1,0 +1,13 @@
+#Check if Array is a subset of another array or not
+arr1 = eval(input())
+arr2 = eval(input())
+is_subset = True
+for i in arr1:
+  if i not in arr2:
+    is_subset = False
+    break
+
+if is_subset:
+  print("Yes")
+else:
+  print("No")
