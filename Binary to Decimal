@@ -1,3 +1,12 @@
+#num = input()
+n = len(num)-1
+decimal = 0
+for i in num:
+  decimal+=int(i)*(2**n)
+  n-=1
+print(decimal)
+
+
 #manual method
 bin = "1011"
 decimal = 0
