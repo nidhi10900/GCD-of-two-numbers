@@ -1,0 +1,26 @@
+#Search an element in an array
+#1st method
+
+arr = eval(input())
+K = int(input())
+for i in range(len(arr)):
+  if arr[i]==K:
+    print(i)
+    
+#2nd method
+arr = eval(input())  
+K = int(input())
+
+found = False
+for i in range(len(arr)):
+    if arr[i] == K:
+        print(f"Element {K} found at index {i}")
+        found = True
+        break
+
+if not found:
+    print(f"Element {K} not found in the array")
+
+    
+    
+    
