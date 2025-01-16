@@ -1,0 +1,28 @@
+#Intersection and Union of two array
+arr1 = eval(input())
+arr2 = eval(input())
+uni = []
+inter = []
+n = len(arr1)
+m = len(arr2)
+i,j = 0,0
+while i<n and j<m:
+  if arr1[i]==arr2[j]:
+    uni.append(arr1[i])
+    inter.append(arr1[i])
+    i+=1
+    j+=1
+  elif arr1[i]<arr2[j]:
+    uni.append(arr1[i])
+    i+=1
+  else:
+    uni.append(arr2[j])
+    j+=1
+while i<n:
+  uni.append(arr1[i])
+  i+=1
+while j<m:
+  uni.append(arr2[j])
+  j+=1
+print(uni)
+print(inter)
