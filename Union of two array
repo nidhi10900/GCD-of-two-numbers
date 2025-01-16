@@ -1,4 +1,4 @@
-#Intersection of two array 
+#Union of two array 
 arr1 = eval(input())
 arr2 = eval(input())
 uni = []
