@@ -16,3 +16,10 @@ while i<n and j<m:
     j+=1
 
 print(inter)
+
+#direct method
+arr1 = eval(input())
+arr2 = eval(input())
+inter = list(set(arr1).intersection(arr2))
+inter.sort()
+print(inter)
