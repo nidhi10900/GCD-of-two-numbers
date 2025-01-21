@@ -1,0 +1,11 @@
+#find the largest word in a given string.
+
+string = input()
+words = string.split()
+max_length = 0
+large = ''
+for word in words:
+  if len(word)>max_length:
+    max_length = len(word)
+    large = word
+print(large)
