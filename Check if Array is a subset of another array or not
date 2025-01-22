@@ -11,3 +11,16 @@ if is_subset:
   print("Yes")
 else:
   print("No")
+
+#Check if array is subset of another array
+arr1 = eval(input())
+arr2 = eval(input())
+for i in arr1:
+  if i in arr2:
+    print("arr1 is a subset of arr2 ")
+    break
+  else:
+    for j in arr2:
+      if j in arr2:
+        print("arr2 is a subset of arr2")
+      
