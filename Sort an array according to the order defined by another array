@@ -1,0 +1,16 @@
+#Sort an array according to the order defined by another array
+arr1 = eval(input())
+arr2 = eval(input())
+result = []
+for i in arr2:
+  for j in arr1:
+    if i==j:
+      result.append(j)
+rem = [i for i in arr1 if i not in arr2]
+result.extend(sorted(rem))
+print(result)
+
+
+
+
+
