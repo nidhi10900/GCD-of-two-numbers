@@ -1,4 +1,18 @@
 #Finding equilibrium index of an array
+#easy code
+arr = eval(input())
+total = sum(arr)
+left = 0
+for i in range(len(arr)):
+  right = total - left - arr[i]
+  if left==right:
+    print(i)
+    break
+  left+=arr[i]
+else:
+  print("-1")
+
+-------------------------------------------------------------------------------------------------------
 #without function
 arr = eval(input())
 total_sum = sum(arr)
