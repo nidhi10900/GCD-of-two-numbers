@@ -1,0 +1,14 @@
+#Finding Circular rotation of an array by K positions
+#right rotation
+arr = eval(input())
+k = int(input())
+rotate = arr[-k:]+arr[:-k]
+print(rotate)
+
+
+#left rotation
+arr = eval(input())
+k = int(input())
+rotate = arr[k:]+arr[:k]
+print(rotate)
+
