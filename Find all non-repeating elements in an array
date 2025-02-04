@@ -1,0 +1,16 @@
+#Find all non-repeating elements in an array
+arr = eval(input())
+non = []
+for i in arr:
+  if arr.count(i)==1:
+    non.append(i)
+print(non)
+#dictionary ke help se bhi kr skte h
+
+-------------------------------------------------------------
+
+from collections import Counter
+arr = eval(input())
+freq = Counter(arr)
+unique = [i for i in arr if freq[i]==1]
+print(unique)
