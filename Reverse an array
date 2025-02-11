@@ -1,0 +1,5 @@
+#Reverse an array
+#arr = list(map(int,input().split()))
+arr = eval(input())
+rev = arr[::-1]
+print(rev)
