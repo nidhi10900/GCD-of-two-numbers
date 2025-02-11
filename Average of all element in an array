@@ -1,0 +1,10 @@
+#Average of all element in an array
+#arr = eval(input())
+arr =list(map(int, input().split()))
+sum_arr = 0
+n = len(arr)
+for i in arr:
+  sum_arr+=i
+avg  = sum_arr/n
+print(avg)
+  
