@@ -5,7 +5,21 @@ for i in arr:
   if arr.count(i)==1:
     non.append(i)
 print(non)
+
 #dictionary ke help se bhi kr skte h
+arr = eval(input())
+dic = {}
+for i in arr:
+  if i not in dic:
+    dic[i]=1
+    
+  else:
+    dic[i]+=1
+non = []
+for i,count in dic.items():
+  if count==1:
+    non.append(i)
+print(non)
 
 -------------------------------------------------------------
 
