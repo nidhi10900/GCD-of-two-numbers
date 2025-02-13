@@ -12,9 +12,21 @@ print(arr1)
 arr = list(map(int,input().split()))
 seen = set()
 arr1 = []
-for i in range(len(arr)):
+for i in arr:
   if i not in seen:
     arr1.append(i)
     seen.add(i)
+print(arr1)
+
+#dictionary
+
+arr = list(map(int,input().split()))
+dic = {}
+arr1 = []
+for i in arr:
+  if i not in dic:
+    
+    dic[i]=1
+    arr1.append(i)
 print(arr1)
  
