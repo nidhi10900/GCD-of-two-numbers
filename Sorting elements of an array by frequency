@@ -1,5 +1,5 @@
 #Sorting elements of an array by frequency
-#for ascending
+# less frequent element first
 arr = list(map(int,input().split()))
 freq = {}
 for i in arr:
@@ -13,7 +13,7 @@ print(sort_arr)                                  #2 1 3 2 2 4 output: [1, 3, 4, 
 
 
 
-#for descending
+# more frequent element first
 arr = list(map(int,input().split()))
 freq = {}
 for i in arr:
